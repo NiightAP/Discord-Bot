@@ -5,4 +5,4 @@
 NiightAP is currently a pre-released discord bot. As I develop the bot I will gradually update the releases on github. Once I feel that NiightAP is at a point that it can be fully release I will provide a link so that the public can use the bot.
 
 
-[NiightAP Website](https://ngyt.tk) | [NiightAP Contact](https://ngyt.tk/contact)
+[NiightAP Website](https://ngyt.tk) | [NiightAP Discord](https://discord.gg/HNMMv3Sg4d) |[NiightAP Contact](https://ngyt.tk/contact)
