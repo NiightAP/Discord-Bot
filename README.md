@@ -16,7 +16,7 @@ In your text editor of choice make a file in the folder named ".env" without the
 
 In the .env file copy and paste: "DISCORD_TOKEN=" without the quotes.
 
-After the equal sign pase your discor bot token from your [discord dev page](https://discord.com/developers/applications)
+After the equal sign paste your discor bot token from your [discord dev page](https://discord.com/developers/applications)
 
 Save the file then start an instance of command prompt.
 
