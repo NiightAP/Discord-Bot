@@ -44,10 +44,6 @@ async def ping(ctx):
     await ctx.channel.trigger_typing()
     await ctx.channel.send(f'Pong! {round(bot.latency * 1000)}ms')
 
-@bot.command()
-async def print(ctx, arg):
-	await ctx.channel.send(arg) 
-
 @bot.command(pass_contect = True)
 @commands.cooldown(1, 15, commands.BucketType.user)
 async def say(ctx, *args):
@@ -60,6 +56,8 @@ async def say(ctx, *args):
 async def on_command_error(ctx, error):
     if isinstance(error, commands.CommandOnCooldown):
         await ctx.send('This command is on cooldown, you may use it again in a little bit.')
+    else:
+        raise error
     
 @bot.command()
 async def dev(ctx):
@@ -89,13 +87,47 @@ async def pardon(ctx, *, member):
             await ctx.send(f'Unabnned {user.mention}')
             return
 
+@bot.event
+async def on_command_error(ctx, error):
+    if isinstance(error, commands.MissingPermissions):
+        await ctx.send('You do not have permissions for that command.')
+    elif isinstance(error, commands.MissingRequiredArgument):
+        await ctx.channel.send("Please enter all of the required arguments.")
+    else:
+        raise error
+
+
 @bot.command()
+@commands.has_permissions(kick_members = True)
 async def kick(ctx, member : discord.Member, *, reason=None):
     await ctx.channel.trigger_typing()
     await member.kick(reason=reason)
     await ctx.message.delete()
     await ctx.channel.send("Member has been kicked")
 
+@bot.event
+async def on_command_error(ctx, error):
+    if isinstance(error, commands.MissingPermissions):
+        await ctx.channel.send('You do not have permissions for that command.')
+        await ctx.message.delete()
+    elif isinstance(error, commands.MissingRequiredArgument):
+        await ctx.channel.send("Please enter all of the required arguments.")
+        await ctx.message.delete()
+    else:
+        raise error
 
+@bot.command()
+@commands.has_permissions(administrator = True)
+async def clear(ctx, amount=10):
+    await ctx.channel.purge(limit=amount)
+    
+@bot.event
+async def on_command_error(ctx, error):
+    if isinstance(error, commands.MissingPermissions):
+        await ctx.send('You do not have permissions for that command.')
+    elif isinstance(error, commands.MissingRequiredArgument):
+        await ctx.channel.send("Please enter all of the required arguments.")
+    else:
+        raise error
 
 bot.run(TOKEN)
