@@ -6,7 +6,7 @@ NiightAP is currently a pre-released discord bot. As I develop the bot I will gr
 
 # How to host your own bot with this code
 
-## Before anything make sure that you have [Python 3](https://www.python.org/downloads/) installed, as well as [discord.py](https://discordpy.readthedocs.io/en/latest/intro.html) 
+### Before anything make sure that you have [Python 3](https://www.python.org/downloads/) installed, as well as [discord.py](https://discordpy.readthedocs.io/en/latest/intro.html) 
 
 After that download this project: [Click here to download](https://github.com/NiightAP/Discord-Bot/archive/main.zip)
 
