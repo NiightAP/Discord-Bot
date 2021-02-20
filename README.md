@@ -1,9 +1,5 @@
 # NiightAP-Discord-Bot
 
-## NiightAP is a general use discord bot that will be slowly developed over time.
-
-NiightAP is currently a pre-released discord bot. As I develop the bot I will gradually update the releases on github. Once I feel that NiightAP is at a point that it can be fully release I will provide a link so that the public can use the bot.
-
 # How to host your own bot with this code
 
 ### Before anything make sure that you have [Python 3](https://www.python.org/downloads/) installed, as well as [discord.py](https://discordpy.readthedocs.io/en/latest/intro.html)
