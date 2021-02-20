@@ -1,5 +1,7 @@
 # NiightAP-Discord-Bot
 
+## Invite NiightAP to your discord server: [Invite bot with this link](https://discord.com/api/oauth2/authorize?client_id=343843453081354252&permissions=8&redirect_uri=https%3A%2F%2Fngyt.tk%2Fdiscordbot%2F%23botinv&response_type=code&scope=identify%20bot)
+
 # How to host your own bot with this code
 
 ### Before anything make sure that you have [Python 3](https://www.python.org/downloads/) installed, as well as [discord.py](https://discordpy.readthedocs.io/en/latest/intro.html)
