@@ -10,13 +10,11 @@ After that download this project: [Click here to download](https://github.com/Ni
 
 Extract the files from the .zip file
 
-In your text editor of choice make a file in the folder named ".env" without the quotes.
-
 In the .env file copy and paste: "DISCORD_TOKEN=" without the quotes.
 
 After the equal sign paste your discord bot token from your [discord dev page](https://discord.com/developers/applications)
 
-Save the file then start an instance of command prompt.
+Save the file then start an instance of your devices terminal.
 
 In command prompt cd to you discord bot files, then type "python bot.py" without quotes.
 
