@@ -6,18 +6,18 @@
 
 ### Before anything make sure that you have [Python 3](https://www.python.org/downloads/) installed, as well as [discord.py](https://discordpy.readthedocs.io/en/latest/intro.html)
 
-After that download this project: [Click here to download](https://github.com/NiightAP/Discord-Bot/archive/main.zip)
+- After that download this project: [Click here to download](https://github.com/NiightAP/Discord-Bot/archive/main.zip)
 
-Extract the files from the .zip file
+- Extract the files from the .zip file
 
-In the .env file copy and paste: "DISCORD_TOKEN=" without the quotes.
+- In the .env file copy and paste: "DISCORD_TOKEN=" without the quotes.
 
-After the equal sign paste your discord bot token from your [discord dev page](https://discord.com/developers/applications)
+- After the equal sign paste your discord bot token from your [discord dev page](https://discord.com/developers/applications)
 
-Save the file then start an instance of your devices terminal.
+- Save the file then start an instance of your devices terminal.
 
-In command prompt cd to you discord bot files, then type "python bot.py" without quotes.
+- In command prompt cd to you discord bot files, then type "python bot.py" without quotes.
 
-If your bot starts, congrats! You have a working bot. If your bot does not start please look over these instructions again to make sure you did not miss anything as all of the instructions here are important and needed for you to start and use the bot. 
+- If your bot starts, congrats! You have a working bot. If your bot does not start please look over these instructions again to make sure you did not miss anything as all of the instructions here are important and needed for you to start and use the bot. 
 
 [NiightAP Website](https://ngyt.tk) | [NiightAP Discord](https://discord.gg/HNMMv3Sg4d) | [NiightAP Contact](https://ngyt.tk/contact)
