@@ -1,19 +1,12 @@
 import discord
-import os
-from discord import client
-import dotenv
-import logging
-import asyncio
-from discord.ext import commands, tasks
-from dotenv import load_dotenv
-from itertools import cycle
+from discord.ext import commands
 
 class Fun(commands.Cog):
     def __init__(self, client):
         self.client = client
 
     # Commands
-    @commands.command(pass_contect = True)
+    @commands.command(pass_context = True)
     async def say(self, ctx, *args):
         await ctx.channel.trigger_typing()
         msg = ' '.join(args)

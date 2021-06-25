@@ -1,12 +1,5 @@
 import discord
-import os
-from discord.errors import ClientException
-import dotenv
-import logging
-import asyncio
-from discord.ext import commands, tasks
-from dotenv import load_dotenv
-from itertools import cycle
+from discord.ext import commands
 
 client = discord.Client()
 
