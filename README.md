@@ -1,5 +1,11 @@
 # NiightAP-Discord-Bot
 
+<p <center>  <a href="https://discord.gg/jYWKxAGVcx">
+    <img src="https://discordapp.com/api/guilds/794834555696709652/widget.png?style=shield" alt="Discord Server">
+  
+  [![Python version](https://img.shields.io/badge/python-3.5%2C%203.6%2C%203.7-blue.svg)](https://python.org)
+  </center></p>
+
 ## Invite NiightAP to your discord server: [Invite bot with this link](https://discord.com/api/oauth2/authorize?client_id=343843453081354252&permissions=8&redirect_uri=https%3A%2F%2Fngyt.tk%2Fdiscordbot%2Fbotinv&response_type=code&scope=identify%20bot)
 
 # How to host your own bot with this code
