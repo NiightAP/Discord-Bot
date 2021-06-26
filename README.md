@@ -6,8 +6,8 @@
     
    <a href="https://github.com/Rapptz/discord.py/">
         <img src="https://img.shields.io/badge/discord-py-blue.svg" alt="discord.py">
-   
-    ![PyPI - Python Version](https://img.shields.io/pypi/pyversions/Discord.py)
+      
+   <img alt="PyPI - Python Version" src="https://img.shields.io/pypi/pyversions/Discord.py">
        
 </center>
  
