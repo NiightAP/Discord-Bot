@@ -2,10 +2,10 @@
 
 <center>
    <a href="https://discord.gg/jYWKxAGVcx">
-    <img src="https://discordapp.com/api/guilds/794834555696709652/widget.png?style=shield" alt="Discord Server">
+    <img src="https://discordapp.com/api/guilds/794834555696709652/widget.png?style=shield" alt="Discord Server"></a>
     
    <a href="https://github.com/Rapptz/discord.py/">
-        <img src="https://img.shields.io/badge/discord-py-blue.svg" alt="discord.py">
+      <img src="https://img.shields.io/badge/discord-py-blue.svg" alt="discord.py"></a>
       
    <img alt="PyPI - Python Version" src="https://img.shields.io/pypi/pyversions/Discord.py">
        
