@@ -33,6 +33,7 @@ async def load(ctx, extension):
 @commands.is_owner()
 async def unload(ctx, extension):
     client.unload_extension(f'cogs.{extension}')
+
 for filename in os.listdir('./cogs'):
     if filename.endswith('.py'):
         client.load_extension(f'cogs.{filename[:-3]}')

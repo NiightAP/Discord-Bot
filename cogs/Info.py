@@ -19,7 +19,7 @@ class Info(commands.Cog):
     @commands.command()
     async def dev(self, ctx):
         await ctx.channel.trigger_typing()
-        await ctx.send("**@NiightGamez#1009**" + " Developed by NiightAP: https://ngyt.tk")
+        await ctx.send("**@NiightGamez#1009**" + " Developed by NiightAP: https://github.com/niightap")
 
     # Source
     @commands.command()
