@@ -2,10 +2,9 @@ import discord
 from discord.ext import commands
 
 
-
 class Discord_Info(commands.Cog):
-    def __init__(self, bot):
-        self.bot = bot
+    def __init__(self, client):
+        self.client = client
 
     # Avatar
     @commands.command()
@@ -14,5 +13,5 @@ class Discord_Info(commands.Cog):
         user = user or ctx.author
         await ctx.send(f"Avatar to **{user.name}** \n{user.avatar_url_as(size=1024)}")
 
-def setup(bot):
-    bot.add_cog(Discord_Info(bot))
+def setup(client):
+    client.add_cog(Discord_Info(client))

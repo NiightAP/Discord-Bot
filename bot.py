@@ -13,7 +13,7 @@ client =  commands.Bot(command_prefix = '?')
 load_dotenv()
 TOKEN = os.getenv('DISCORD_TOKEN')
 
-status = cycle(['ngyt.tk/discordbot', '?help for help'])
+status = cycle(['https://github.com/niightap', '?help for help'])
 
 #bot status
 @tasks.loop(seconds=30)
@@ -33,7 +33,6 @@ async def load(ctx, extension):
 @commands.is_owner()
 async def unload(ctx, extension):
     client.unload_extension(f'cogs.{extension}')
-
 for filename in os.listdir('./cogs'):
     if filename.endswith('.py'):
         client.load_extension(f'cogs.{filename[:-3]}')
