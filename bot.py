@@ -4,8 +4,11 @@ import dotenv
 import logging
 import asyncio
 from discord.ext import commands, tasks
+from discord.ext.commands import CommandNotFound
 from dotenv import load_dotenv
 from itertools import cycle
+
+from setuptools import Command
 
 client = discord.Client()
 client =  commands.Bot(command_prefix = '?')
@@ -22,6 +25,23 @@ async def change_status():
 @client.event
 async def on_ready():
     change_status.start()
+
+# Errors
+async def on_error(self, err, *args, **kwargs):
+    if err == "on_command_error":
+        await args[0].send("Something went wrong.")
+
+    raise
+
+async def on_command_error(self, ctx, exc):
+    if isinstance(exc, CommandNotFound):
+        pass
+    
+    elif hasattr(exc, ["originaal"]):
+        raise exc.original
+    
+    else: 
+        raise exc
 
 #cogs
 @client.command(pass_context = True)
