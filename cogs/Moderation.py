@@ -69,5 +69,13 @@ class Moderation(commands.Cog):
         await ctx.channel.set_permissions(ctx.guild.default_role, send_messages=True)
         await ctx.send( ctx.channel.mention + " ***Channel has been unlocked.***")
 
+    # Shutdown
+    @commands.command(pass_context = True)
+    @commands.is_owner()
+    async def shutdown(self, ctx):
+        await ctx.channel.trigger_typing()
+        await ctx.send("Bot is shutting down.")
+        await self.client.logout()
+
 def setup(client):
     client.add_cog(Moderation(client))

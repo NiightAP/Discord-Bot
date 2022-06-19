@@ -5,6 +5,8 @@ import logging
 import asyncio
 from discord.ext import commands, tasks
 from discord.ext.commands import CommandNotFound
+from discord_slash import SlashCommand, SlashContext
+from discord_slash.utils.manage_commands import create_choice, create_option
 from dotenv import load_dotenv
 from itertools import cycle
 
@@ -12,6 +14,7 @@ from setuptools import Command
 
 client = discord.Client()
 client =  commands.Bot(command_prefix = '?')
+slash = SlashCommand(client, sync_commands=True)
 
 load_dotenv()
 TOKEN = os.getenv('DISCORD_TOKEN')
